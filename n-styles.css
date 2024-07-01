@@ -1,0 +1,343 @@
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #181414;
+  height: auto;
+  font-family: "Br Firma", sans-serif;
+}
+.hide {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+img {
+  max-width: 100%;
+}
+header {
+  padding: 2% 5%;
+}
+header > img {
+  max-width: 28%;
+}
+.first-section {
+  max-width: 100%;
+  background-color: #f5fff8;
+}
+.first-section i {
+  color: #26bb62;
+}
+.first-section .features {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  padding: 10px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.loc-n-price {
+  gap: 40px;
+}
+.text,
+.ap-features,
+footer {
+  padding: 2% 5%;
+}
+.rent-bubble {
+  margin-top: 20px;
+  background-color: #26bb62;
+  color: white;
+  border-radius: 15px 0 15px 15px;
+  padding: 8px 20px;
+  width: fit-content;
+  text-align: center;
+}
+.findar-icon {
+  display: none;
+  top: 35%;
+  width: 30%;
+  right: 10%;
+  z-index: 0;
+  opacity: 0.4;
+  position: absolute;
+}
+.title-n-location {
+  width: 90%;
+}
+.title-n-location > h2 {
+  font-family: "Br Firma semi-bold", sans-serif;
+  font-size: 32px;
+  margin: 20px 0 0 0;
+}
+.features {
+}
+.bathroom {
+  border-right: 2px solid rgb(159, 159, 159);
+}
+.features > div {
+  text-align: center;
+  width: 50%;
+  color: white;
+}
+.image-feature {
+  position: relative;
+  overflow: hidden;
+  max-height: 600px;
+}
+.image-feature > .image {
+  justify-content: center;
+  align-items: center;
+}
+.image-feature > .image img {
+  width: 100%;
+  top: 50%;
+}
+.inner-container {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.inner-section {
+  position: relative;
+}
+.inner-section > .text > h1 {
+  color: #26bb62;
+  font-size: 6vw;
+}
+
+.inner-section .desc {
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  bottom: 0;
+  padding: 2% 5%;
+  backdrop-filter: blur(10px);
+  z-index: 3;
+}
+.section .desc p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.section .bg-image {
+  display: none;
+}
+.section .image {
+  display: flex;
+  justify-content: end;
+}
+.section .fg-image {
+  overflow: hidden;
+  border-radius: 40px 0 0 0;
+  width: 90%;
+}
+.section img {
+  width: 100%;
+}
+
+.about-property > .text h1 {
+  color: #26bb62;
+
+  font-family: "Br firma bold";
+}
+.about-property > .text p {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+.star {
+  display: none;
+}
+.ap-features {
+  background-color: #f0fff6;
+}
+.feature {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.feature p {
+  padding: 0;
+  margin: 0;
+}
+.feature i {
+  color: #26bb62;
+}
+.feature > div {
+  gap: 10px;
+  padding: 15px 15px;
+  border-radius: 20px 20px 20px 20px;
+  width: fit-content;
+  border: 2px solid#26bb62;
+  font-size: 0.8rem;
+}
+.feature > div > p {
+}
+footer {
+  color: #8f8f8f;
+}
+.asterisk {
+  display: none;
+}
+@media (max-width: 480px) {
+  .desc p {
+    padding-left: 10px;
+    border-left: 2px solid #26bb62;
+  }
+}
+@media (min-width: 468px) and (max-width: 1024px) {
+  .inner-section .image {
+    max-height: 600px;
+  }
+  .inner-section .image {
+    height: 80%;
+  }
+  .inner-section img {
+    height: auto;
+  }
+  .desc p {
+    padding-left: 10px;
+    border-left: 2px solid #26bb62;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-section {
+    display: flex;
+    padding: 0;
+    height: 400px;
+  }
+  .first-section h2 {
+    font-size: 32px;
+  }
+  .first-section > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+  }
+  .first-section > .image-feature {
+    overflow: hidden;
+    border-radius: 20px 0 0 0;
+    width: 60%;
+  }
+  .inner-container {
+    width: 100%;
+  }
+  .section {
+    height: 600px;
+    overflow: hidden;
+    padding: 6% 5%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .inner-section {
+    display: flex;
+    height: 100%;
+    gap: 50px;
+  }
+  .section .text {
+    padding: 0;
+    width: 18%;
+  }
+  .section .image {
+    width: 80%;
+    height: 100%;
+    position: relative;
+  }
+  .section h1 {
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .ltr-section .desc {
+    left: 0;
+  }
+  .ltr-section p {
+    padding-left: 10px;
+    border-left: 2px solid #26bb62;
+  }
+  .ltr-section .asterisk {
+    position: absolute;
+    right: 0;
+  }
+  .rtl-section .asterisk {
+    position: absolute;
+    left: 0;
+  }
+
+  .desc {
+    bottom: 0;
+    width: 60%;
+    border-radius: 0 40px 0 0;
+    z-index: 400;
+  }
+  .desc > p {
+    font-size: 16px;
+  }
+  .inner-section > .image {
+    overflow: hidden;
+  }
+  .inner-section .fg-image {
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    z-index: 1;
+  }
+  .inner-section > .image > .fg-image img {
+    width: auto;
+    max-height: 100%;
+  }
+
+  .inner-section .bg-image {
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    z-index: 1;
+    filter: blur(10px);
+  }
+  .rtl-section .inner-section {
+    flex-direction: row-reverse;
+  }
+  .rtl-section {
+    text-align: right;
+  }
+  .rtl-section .inner-section .desc {
+    border-radius: 40px 0px 0 0;
+    right: 0;
+  }
+  .rtl-section p {
+    padding-right: 10px;
+    border-right: 2px solid #26bb62;
+  }
+}
+@font-face {
+  font-family: "Br Firma";
+  src: url("/fonts/br-firma/BR\ Firma\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Br Firma Semi-bold";
+  src: url("/fonts/br-firma/BR\ Firma\ SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Br Firma Bold";
+  src: url("/fonts/br-firma/BR\ Firma\ Bold.otf") format("opentype");
+}
